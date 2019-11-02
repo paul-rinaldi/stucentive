@@ -8,18 +8,12 @@ import { Paper } from '@material-ui/core';
 import Tab from '@material-ui/core/Tab';
 
 const Navigation = () => {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
   return (
     <Paper>
       {/**HEADER/ */}
       <Tabs 
-        value={value} 
-        onChange={handleChange}
+        //value={value} 
+        //onChange={handleChange}
         indicatorColor="primary"
         textColor="primary"
         centered
