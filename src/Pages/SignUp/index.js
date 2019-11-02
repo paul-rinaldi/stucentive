@@ -16,8 +16,11 @@ class SignUp extends React.Component {
         };
 
         this.handleChangeF1 = this.handleChangeF1.bind(this);
+
         this.handleChangeF2 = this.handleChangeF2.bind(this);
+
         this.handleChangeF3 = this.handleChangeF3.bind(this);
+        
         this.handleSubmit = this.handleSubmit.bind(this);
     };
 
@@ -39,13 +42,13 @@ class SignUp extends React.Component {
     render() {
         return (
             <div container>
-                <Typography variant="h4" component="h4" gutterBottom style={{color:"white"}}>
-                    Choose your focuses 
+                <Typography variant="h4" component="h4" style={{color:"white"}}>
+                    Choose 3 Skills As Your Focus
                 </Typography>
                 <form onSubmit={this.handleSubmit}>
-                    <TextField margin="normal" label="Skill 1" value={this.state.f1} onChange={this.handleChangeF1} type="text" placeholder="Ex. Natural Language Processing" required />
-                    <TextField margin="normal" label="Skill 2" value={this.state.f2} onChange={this.handleChangeF2} type="text" placeholder="Ex. Leadership" required />
-                    <TextField margin="normal" label="Skill 3" value={this.state.f3} onChange={this.handleChangeF3} type="text" placeholder="Ex. React JS" required />
+                    <TextField fullWidth margin="normal" label="Skill 1" value={this.state.f1} onChange={this.handleChangeF1} type="text" placeholder="Ex. Natural Language Processing" required />
+                    <TextField fullWidth margin="normal" label="Skill 2" value={this.state.f2} onChange={this.handleChangeF2} type="text" placeholder="Ex. Leadership" required />
+                    <TextField fullWidth margin="normal" label="Skill 3" value={this.state.f3} onChange={this.handleChangeF3} type="text" placeholder="Ex. React JS" required />
                     <Button block value="Submit" type="submit" variant='contained'>
                         <Typography>
                             Continue
