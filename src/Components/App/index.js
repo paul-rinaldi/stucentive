@@ -10,7 +10,7 @@ import * as ROUTES from '../../constants/routes';
 function App() {
   return (
     <Router>
-    <div style={{backgroundColor:"black"}}>
+    <div style={{backgroundColor:"dodgerblue"}}>
         <Route exact path={ROUTES.SIGN_UP} component={SignUpPage} />
         <Route exact path={ROUTES.FOCUS} component={FocusPage} />
         <Route exact path={ROUTES.MY_EVENTS} component={MyEventPage} />

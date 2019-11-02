@@ -34,18 +34,16 @@ class SignUp extends React.Component {
                 <Typography variant="h4" component="h4" gutterBottom style={{color:"white"}}>
                     Choose your focuses 
                 </Typography>
-                <Paper>
-                    <form onSubmit={this.handleSubmit}>
-                        <TextField label="Skill 1" value={this.state.f1} onChange={this.handleChange} name="Primary Focus" type="text" placeholder="Natural Language Processing" required />
-                        <TextField label="Skill 2" value={this.state.f2} onChange={this.handleChange} name="Secondary Focus" type="text" placeholder="Leadership" required />
-                        <TextField label="Skill 3" value={this.state.f3} onChange={this.handleChange} name="Tertiary Focus" type="text" placeholder="React JS" required />
-                        <Button block value="Submit" type="submit" variant='contained'>
-                            <Typography>
-                                Continue
-                            </Typography>
-                        </Button>
-                    </form>
-                </Paper>
+                <form onSubmit={this.handleSubmit}>
+                    <TextField margin="normal" label="Skill 1" value={this.state.f1} onChange={this.handleChange} type="text" placeholder="Ex. Natural Language Processing" required />
+                    <TextField margin="normal" label="Skill 2" value={this.state.f2} onChange={this.handleChange} type="text" placeholder="Ex. Leadership" required />
+                    <TextField margin="normal" label="Skill 3" value={this.state.f3} onChange={this.handleChange} type="text" placeholder="Ex. React JS" required />
+                    <Button block value="Submit" type="submit" variant='contained'>
+                        <Typography>
+                            Continue
+                        </Typography>
+                    </Button>
+                </form>
             </div>
           );
     }  

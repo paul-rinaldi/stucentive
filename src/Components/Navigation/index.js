@@ -10,18 +10,15 @@ import Tab from '@material-ui/core/Tab';
 const Navigation = () => {
   return (
     <Paper>
-      {/**HEADER/ */}
       <Tabs 
-        //value={value} 
-        //onChange={handleChange}
         indicatorColor="primary"
         textColor="primary"
         centered
         variant="fullWidth"
+        
         >
-        <Tab label="Add Event" />
-        <Tab label="Focus" />
-        <Tab label="My Events" />
+        <Tab label="Focus" to={'/focus'} component={Link}/>
+        <Tab label="My Events" to={'/myevents'} component={Link}/>
       </Tabs>
     </Paper>
   )
