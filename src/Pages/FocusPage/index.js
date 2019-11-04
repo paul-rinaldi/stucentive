@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 //import Chart from '../../Components/Venn';
-
+import Venn from "../../Components/Venn";
 //import VennModule from 'highcharts/modules/venn.js';
-import Highcharts from 'highcharts'
-import HighchartsReact from 'highcharts-react-official';
-import venn from 'highcharts/modules/venn';
-import HighCharts from 'highcharts/highstock'
+//import Highcharts from 'highcharts'
+//import HighchartsReact from 'highcharts-react-official';
+//import venn from 'highcharts/modules/venn';
+//import HighCharts from 'highcharts/highstock'
 
-venn(Highcharts);
+//venn(Highcharts);
 
 const Focus = () => {
-
-    const options = {
+  /*  
+  const options = {
         series: [
           {
             type: "venn",
@@ -63,6 +63,13 @@ const Focus = () => {
     </div>
 
     
+  );
+      */
+
+  return (
+    <div container>
+      <Venn />
+    </div>
   );
 };
 
